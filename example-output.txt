@@ -1,0 +1,75 @@
+[P implies P]}
+  (P -> P)
+   - following from [P implies P].A and [P implies P].B
+
+[P implies P].A}
+  ((P -> (Q -> P)) -> (P -> P))
+   - following from [P implies P].A.A and [P implies P].A.B
+
+[P implies P].A.A}
+  ((P -> ((Q -> P) -> P)) -> ((P -> (Q -> P)) -> (P -> P)))
+   - following from Axiom 2
+
+[P implies P].A.B}
+  (P -> ((Q -> P) -> P))
+   - following from Axiom 1
+
+[P implies P].B}
+  (P -> (Q -> P))
+   - following from Axiom 1
+QED
+-----
+
+[Hypothetical Syllogism]}
+  (P -> R)
+   - following from [Hypothetical Syllogism].A and [Hypothetical Syllogism].B
+
+[Hypothetical Syllogism].A}
+  ((P -> Q) -> (P -> R))
+   - following from [Hypothetical Syllogism].A.A and [Hypothetical Syllogism].A.B
+
+[Hypothetical Syllogism].A.A}
+  ((P -> (Q -> R)) -> ((P -> Q) -> (P -> R)))
+   - following from Axiom 2
+
+[Hypothetical Syllogism].A.B}
+  (P -> (Q -> R))
+   - following from [Hypothetical Syllogism].A.B.A and [Hypothetical Syllogism].A.B.B
+
+[Hypothetical Syllogism].A.B.A}
+  ((P -> Q) -> (P -> (Q -> R)))
+   - following from [Hypothetical Syllogism].A.B.A.A and [Hypothetical Syllogism].A.B.A.B
+
+[Hypothetical Syllogism].A.B.A.A}
+  ((P -> (Q -> (Q -> R))) -> ((P -> Q) -> (P -> (Q -> R))))
+   - following from Axiom 2
+
+[Hypothetical Syllogism].A.B.A.B}
+  (P -> (Q -> (Q -> R)))
+   - following from [Hypothetical Syllogism].A.B.A.B.A and [Hypothetical Syllogism].A.B.A.B.B
+
+[Hypothetical Syllogism].A.B.A.B.A}
+  ((Q -> (Q -> R)) -> (P -> (Q -> (Q -> R))))
+   - following from Axiom 1
+
+[Hypothetical Syllogism].A.B.A.B.B}
+  (Q -> (Q -> R))
+   - following from [Hypothetical Syllogism].A.B.A.B.B.A and [Hypothetical Syllogism].A.B.A.B.B.B
+
+[Hypothetical Syllogism].A.B.A.B.B.A}
+  ((Q -> R) -> (Q -> (Q -> R)))
+   - following from Axiom 1
+
+[Hypothetical Syllogism].A.B.A.B.B.B}
+ (Q -> R)
+   - by Assumption
+
+[Hypothetical Syllogism].A.B.B}
+ (P -> Q)
+   - by Assumption
+
+[Hypothetical Syllogism].B}
+ (P -> Q)
+   - by Assumption
+QED
+-----
